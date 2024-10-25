@@ -24,7 +24,7 @@ async function deleteOldRecords() {
 }
 
 // Schedule the task to run every day at midnight
-cron.schedule('30 20 * * *', () => {
+cron.schedule('0 0 * * *', () => {
   console.log('Running scheduled task to delete old records...');
   deleteOldRecords();
 });
